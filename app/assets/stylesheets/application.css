@@ -1,0 +1,19 @@
+/*
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+  background: url("/assets/bg.jpeg") no-repeat;
+  background-size: cover;
+  font-family: font-family: 'Mate SC', serif;
+}
+
+.container{
+	background: rgba(255, 255, 255, 0.6);
+}
+
+.navbar-default .navbar-brand {
+  font-family: 'Bowlby One', cursive;
+  color: #993955;
+}

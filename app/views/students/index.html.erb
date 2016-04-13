@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Won't Somebody Think Of The Children!</h1>
+
+
+<div class="row">
+  <% @students.each do |student| %>
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h1><%= student.name %></h1>
+          <h3><%= student.age %></h3>
+          <td><%= link_to 'Show', student, class: "btn btn-primary" %></td>
+          <td><%= link_to 'Edit', edit_student_path(student), class: "btn btn-primary" %></td>
+          <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-primary" %></td>
+        </div>
+      </div>
+    </div>  
+  <% end %>
+</div>
+
+
+<br>
+
+<%= link_to 'New Student', new_student_path, class: "btn btn-default" %>
+<br>
+<br>

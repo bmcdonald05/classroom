@@ -17,3 +17,9 @@ body {
   font-family: 'Bowlby One', cursive;
   color: #993955;
 }
+
+
+.navbar{
+	background-color: rgba(255, 255, 255, 0.6);
+	color: navy;
+}
